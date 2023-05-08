@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(218, 218, 248);
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead,
+        tfoot {
+            background-color: #575757;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #575757 ;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(160, 160, 160);
+        } /* odd(impar) = 2n-1
+             even(par) = 2n*/
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        .porcen {
+            text-align: center;
+        }
+
+        .total {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 110px;">População</th>
+            <th scope="col" style="width: 100px;">% da pop. total</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="numero">46 024 937</td>
+                <td class="porcen">22,2%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+                <td class="porcen">10,0%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+                <td class="porcen"> 8,0%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 659 023</td>
+                <td class="porcen">7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 835 379</td>
+                <td class="porcen">5,7%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 088 065</td>
+                <td class="porcen">5,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 051 113</td>
+                <td class="porcen">4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8 936 431</td>
+                <td class="porcen"> 4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8 442 962</td>
+                <td class="porcen">4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 762 154</td>
+                <td class="porcen">3,7%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">6 950 976</td>
+                <td class="porcen">3,3%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6 800 605</td>
+                <td class="porcen">3,3%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">4 108 508</td>
+                <td class="porcen">1,9%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">4 030 961</td>
+                <td class="porcen">1,9%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3 952 262</td>
+                <td class="porcen">1,9%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3 784 239</td>
+                <td class="porcen">1,8%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3 303 953</td>
+                <td class="porcen">1,6%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3 270 174</td>
+                <td class="porcen">1,6%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3 125 254 </td>
+                <td class="porcen">1,5%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">2 923 369</td>
+                <td class="porcen">1,4%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2 833 742</td>
+                <td class="porcen">1,4%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2 211 868</td>
+                <td class="porcen">1,1%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1 616 379</td>
+                <td class="porcen">0,8%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1 584 306</td>
+                <td class="porcen">0,8%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">829 780</td>
+                <td class="porcen">0,4%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">774 268</td>
+                <td class="porcen">0,4%</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">634 805</td>
+                <td class="porcen">0,3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="total"><strong>207.883.699</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aut, quo necessitatibus neque sapiente dolorum perferendis, rem id, porro cum impedit itaque similique! Voluptatibus ex in repellendus, doloribus atque eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore repellendus alias deserunt, fuga porro officia corrupti voluptates laudantium magnam aspernatur recusandae nam sapiente libero blanditiis. Laborum expedita neque harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique repellendus vel pariatur impedit et adipisci explicabo praesentium cum voluptatibus inventore soluta earum optio saepe facere molestias, doloremque eaque odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus dolorem! Ipsa autem dolorem aspernatur praesentium perferendis animi nesciunt eveniet reprehenderit, similique, sapiente fuga quasi corrupti, perspiciatis delectus numquam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, quos ad at obcaecati repellendus reiciendis error dolores veniam consectetur aperiam? Corporis blanditiis tempore ex temporibus nulla excepturi quidem harum.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aut, quo necessitatibus neque sapiente dolorum perferendis, rem id, porro cum impedit itaque similique! Voluptatibus ex in repellendus, doloribus atque eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore repellendus alias deserunt, fuga porro officia corrupti voluptates laudantium magnam aspernatur recusandae nam sapiente libero blanditiis. Laborum expedita neque harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique repellendus vel pariatur impedit et adipisci explicabo praesentium cum voluptatibus inventore soluta earum optio saepe facere molestias, doloremque eaque odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus dolorem! Ipsa autem dolorem aspernatur praesentium perferendis animi nesciunt eveniet reprehenderit, similique, sapiente fuga quasi corrupti, perspiciatis delectus numquam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, quos ad at obcaecati repellendus reiciendis error dolores veniam consectetur aperiam? Corporis blanditiis tempore ex temporibus nulla excepturi quidem harum.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aut, quo necessitatibus neque sapiente dolorum perferendis, rem id, porro cum impedit itaque similique! Voluptatibus ex in repellendus, doloribus atque eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore repellendus alias deserunt, fuga porro officia corrupti voluptates laudantium magnam aspernatur recusandae nam sapiente libero blanditiis. Laborum expedita neque harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique repellendus vel pariatur impedit et adipisci explicabo praesentium cum voluptatibus inventore soluta earum optio saepe facere molestias, doloremque eaque odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus dolorem! Ipsa autem dolorem aspernatur praesentium perferendis animi nesciunt eveniet reprehenderit, similique, sapiente fuga quasi corrupti, perspiciatis delectus numquam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, quos ad at obcaecati repellendus reiciendis error dolores veniam consectetur aperiam? Corporis blanditiis tempore ex temporibus nulla excepturi quidem harum.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aut, quo necessitatibus neque sapiente dolorum perferendis, rem id, porro cum impedit itaque similique! Voluptatibus ex in repellendus, doloribus atque eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore repellendus alias deserunt, fuga porro officia corrupti voluptates laudantium magnam aspernatur recusandae nam sapiente libero blanditiis. Laborum expedita neque harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique repellendus vel pariatur impedit et adipisci explicabo praesentium cum voluptatibus inventore soluta earum optio saepe facere molestias, doloremque eaque odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus dolorem! Ipsa autem dolorem aspernatur praesentium perferendis animi nesciunt eveniet reprehenderit, similique, sapiente fuga quasi corrupti, perspiciatis delectus numquam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, quos ad at obcaecati repellendus reiciendis error dolores veniam consectetur aperiam? Corporis blanditiis tempore ex temporibus nulla excepturi quidem harum.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aut, quo necessitatibus neque sapiente dolorum perferendis, rem id, porro cum impedit itaque similique! Voluptatibus ex in repellendus, doloribus atque eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore repellendus alias deserunt, fuga porro officia corrupti voluptates laudantium magnam aspernatur recusandae nam sapiente libero blanditiis. Laborum expedita neque harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique repellendus vel pariatur impedit et adipisci explicabo praesentium cum voluptatibus inventore soluta earum optio saepe facere molestias, doloremque eaque odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus dolorem! Ipsa autem dolorem aspernatur praesentium perferendis animi nesciunt eveniet reprehenderit, similique, sapiente fuga quasi corrupti, perspiciatis delectus numquam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, quos ad at obcaecati repellendus reiciendis error dolores veniam consectetur aperiam? Corporis blanditiis tempore ex temporibus nulla excepturi quidem harum.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aut, quo necessitatibus neque sapiente dolorum perferendis, rem id, porro cum impedit itaque similique! Voluptatibus ex in repellendus, doloribus atque eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore repellendus alias deserunt, fuga porro officia corrupti voluptates laudantium magnam aspernatur recusandae nam sapiente libero blanditiis. Laborum expedita neque harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique repellendus vel pariatur impedit et adipisci explicabo praesentium cum voluptatibus inventore soluta earum optio saepe facere molestias, doloremque eaque odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus dolorem! Ipsa autem dolorem aspernatur praesentium perferendis animi nesciunt eveniet reprehenderit, similique, sapiente fuga quasi corrupti, perspiciatis delectus numquam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, quos ad at obcaecati repellendus reiciendis error dolores veniam consectetur aperiam? Corporis blanditiis tempore ex temporibus nulla excepturi quidem harum.</p>
+</body>
+
+</html>
